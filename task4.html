@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      label {
+        color: black;
+      }
+      #main {
+        display: flex;
+        flex-direction: row;
+      }
+      #lab {
+        line-height: 24px;
+        padding-left: 30px;
+      }
+      #fullname,
+      #username,
+      #Password,
+      #repassword,
+      #address,
+      #age,
+      #gender {
+        margin-bottom: 3px;
+      }
+      #inp {
+        padding-left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="task4.html">
+      <div id="main">
+        <div id="lab">
+          <label for="fullname">Full Name:</label><br />
+          <label for="username">Username:</label><br />
+          <label for="Password">Password:</label><br />
+          <label for="repassword">Repassword:</label><br />
+          <label for="address">Address:</label><br />
+          <label for="age">Age:</label><br />
+          <label for="gender"> Gender: </label><br />
+
+          <input type="submit" name="save" id="save" value="Save" />
+        </div>
+        <div id="inp">
+          <input type="text" name="fullname" id="fullname" /><br />
+          <input type="text" name="username" id="username" /><br />
+          <input type="password" name="Password" id="Password" /><br />
+          <input type="password" name="repassword" id="repassword" /><br />
+          <input type="text" name="address" id="address" /> <br />
+          <input type="text" name="age" id="age" /><br />
+          <select name="gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Others</option></select
+          ><br />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

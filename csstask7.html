@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      label {
+        color: white;
+      }
+      #main {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(208, 37, 117);
+        padding-left: 40%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+      }
+      #lab {
+        line-height: 24px;
+        padding-left: 30px;
+        background-color: rgb(167, 19, 59);
+        padding-top: 20px;
+      }
+      #Name,
+      #Email,
+      #Password,
+      #Phone,
+      #Gender,
+      #Language,
+      #Zipcode,
+      #About {
+        margin-bottom: 3px;
+      }
+      #inp {
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 30px;
+        background-color: rgb(167, 19, 59);
+      }
+      #Register {
+        font-weight: bolder;
+        font-size: large;
+        background-color: white;
+        width:360px;
+        margin-left: -130px;
+        margin-bottom: 40px;
+        height: 40px;
+        border: 0px solid white;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main" class="main">
+      <div id="lab">
+        <label for="Name">Name:</label><br />
+        <label for="Email">Email:</label><br />
+        <label for="Password">Password:</label><br />
+        <label for="Phone">Phone Number:</label><br />
+        <label for="Gender">Gender:</label><br />
+        <label for="Language"> Language: </label><br />
+
+        <label for="Zipcode">Zip Code:</label><br />
+        <label for="About">About:</label><br />
+      </div>
+      <div id="inp">
+        <input type="text" name="Name" id="Name" /><br />
+        <input type="text" name="Email" id="Email" /><br />
+        <input type="password" name="Password" id="Password" /><br />
+        <input type="text" name="Phone" id="Phone" /><br />
+        Male: <input type="radio" name="Gender" id="Gender" /> Female:
+        <input type="radio" name="Gender" id="Gender" /> Others:
+        <input type="radio" name="Gender" id="Gender" /> <br />
+        <select name="Language" id="Language">
+          <option value="SelectLanguage">Select Language</option>
+          <option value="English">English</option>
+          <option value="Hindi">Hindi</option>
+          <option value="Telegu">Telegu</option></select
+        ><br />
+        <input type="text" name="Zipcode" id="Zipcode" /> <br />
+        <textarea name="About" id="About" rows="2"></textarea><br />
+        <input type="submit" id="Register" value="Register" />
+  </body>
+      </div>
+    </div>
+    
+</html>

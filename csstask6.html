@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #main {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #fd {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #img {
+        width: 300px;
+      }
+      #username,
+      #password {
+        width: 500px;
+      }
+      label {
+        margin-left: -430px;
+        font-weight: bold;
+      }
+      .checkbox-label {
+        display: flex;
+        align-items: center;
+        margin-left: -385px;
+        font-weight: 200;
+      }
+      #cb {
+        margin-right: 5px;
+      }
+      #sub {
+        width: 500px;
+        background-color: rgb(79, 238, 79);
+        height: 30px;
+      }
+      #td {
+        background-color: rgb(218, 218, 218);
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #c {
+        margin-top: 10px;
+      }
+      span {
+        float: right;
+      }
+      a {
+        text-decoration: underline;
+        color: black;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="fd">
+        <img src="profile.jpg" /><br />
+
+        <label for="username">Username</label><br />
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter Username"
+        /><br /><br />
+
+        <label for="password">Password</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter Password"
+        /><br /><br />
+
+        <label class="checkbox-label" for="cb">
+          <input type="checkbox" name="cb" id="cb" /> Remember me </label
+        ><br /><br />
+
+        <input type="submit" name="sub" id="sub" value="Login" /><br /><br />
+      </div>
+      <div id="td">
+        <input type="submit" name="c" id="c" value="Cancel" />
+        <span><a href="#">Forgot password?</a></span>
+      </div>
+    </div>
+  </body>
+</html>

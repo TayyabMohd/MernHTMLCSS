@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border: solid 1px black;
+        background-color: rgb(68, 163, 172);
+        width: 100vw;
+      }
+      th,
+      td {
+        border: solid 1px black;
+        border-radius: 10px;
+      }
+      #main {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50vw;
+        height: 50vh;
+      }
+      #r1,
+      #r2,
+      #r3 {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        justify-content: center;
+        margin-bottom: 22px;
+      }
+      .shapes {
+        border: 2px solid rgb(71, 200, 71);
+        padding: 35px;
+        margin: auto;
+      }
+      #r1c1,
+      #r1c2,
+      #r2c1,
+      #r3c2 {
+        border-radius: 10px;
+      }
+      #r1c3,
+      #r2c3 {
+        border-radius: 20px;
+      }
+      #r3c1 {
+        width: 20px;
+        height: 0px;
+        border: 2px solid rgb(71, 200, 71);
+        border-radius: 50%;
+        margin-left: 70px;
+      }
+      #r3c3 {
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <table>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>80</td>
+        </tr>
+      </table>
+    </div>
+    <div id="main">
+      <div id="r1">
+        <div id="r1c1" class="shapes"></div>
+        <div id="r1c2" class="shapes"></div>
+        <div id="r1c3" class="shapes"></div>
+      </div>
+      <div id="r2">
+        <div id="r2c1" class="shapes"></div>
+        <div id="r2c2" class="shapes"></div>
+        <div id="r2c3" class="shapes"></div>
+      </div>
+      <div id="r3">
+        <div id="r3c1" class="shapes"></div>
+        <div id="r3c2" class="shapes"></div>
+        <div id="r3c3" class="shapes"></div>
+      </div>
+    </div>
+  </body>
+</html>
